@@ -35,7 +35,7 @@ import javax.swing.event.ChangeEvent ;
 import javax.swing.border.LineBorder ;
 
 
-
+//时间选择控件，实现
 public class DateChooserJButton extends JButton {
 
 
@@ -74,11 +74,11 @@ dateChooser.showDateChooser(p) ;
 }) ;
 } 
 
-
+//得到当前时间
 private static Date getNowDate() {
 return Calendar.getInstance().getTime() ;
 } 
-
+//默认时间格式
 private static SimpleDateFormat getDefaultDateFormat() {
 return new SimpleDateFormat("yyyy年MM月dd日HH时") ;
 }
@@ -105,7 +105,7 @@ setDate(date) ;
 }
 
 
-
+//设置时间
 public void setDate(Date date) {
 super.setText(preLabel+getDefaultDateFormat().format(date));
 }
